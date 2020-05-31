@@ -1,0 +1,11 @@
+version: '2'
+services:
+  jacintgateway-postgresql:
+    image: postgres:12.1
+    # volumes:
+    #     - ~/volumes/jhipster/jacintGateway/postgresql/:/var/lib/postgresql/data/
+    environment:
+      - POSTGRES_USER=jacintGateway
+      - POSTGRES_PASSWORD=
+    ports:
+      - 5432:5432
